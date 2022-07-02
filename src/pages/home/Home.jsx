@@ -1,9 +1,13 @@
-import React from 'react'
-import "./home.css"
-import Header from '../../components/header/Header'
+import React from 'react';
+import "./home.css";
+import Header from '../../components/header/Header';
+import Navbar from '../../components/navbar/Navbar';
 const Home = () => {
   return (
-    <Header/>
+    <div>
+      <Navbar />
+      <Header />
+    </div>
   )
 }
 
