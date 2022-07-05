@@ -1,15 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 
 function Navbar(props) {
+  const navigate = useNavigate();
+
+  function handleClick(){
+    navigate("/");
+  }
+
   return (
     <div className="navbar">
       <div className="navContainer">
-        <span className="logo">HBooking</span>
-        {props.type !== "list" && <div className="navItems">
+        <span className="logo" onClick={handleClick}>HBooking</span>
+        <div className="navItems">
           <button className="navButton">Register</button>
           <button className="navButton">Login</button>
-        </div>}
+        </div>
       </div>
     </div>
   );

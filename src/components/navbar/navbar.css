@@ -18,6 +18,9 @@
     margin-left: 15px;
     font-weight: 500;
 }
+.logo:hover{
+    cursor: pointer;
+}
 
 .navButton{
     margin-left: 20px;
