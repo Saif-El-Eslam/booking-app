@@ -10,6 +10,13 @@
   max-width: 1024px;
   margin: 20px 0px 100px 0px;
 }
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
 .headerList {
   display: flex;
   gap: 40px;
@@ -35,6 +42,9 @@
   font-weight: 500;
   cursor: pointer;
   padding: 10px;
+}
+.headerBtn:hover{
+  background-color: #13364f;
 }
 
 .headerSearch {
