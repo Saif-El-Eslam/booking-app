@@ -1,3 +1,8 @@
+.footerWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .footer{
     width: 100%;
     max-width: 1024px;
