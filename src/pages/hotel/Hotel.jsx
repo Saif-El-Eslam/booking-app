@@ -103,9 +103,8 @@ const Hotel = () => {
           </span>
           <div className="hotelImages">
             {photos.map((photo, index) => (
-              <div className="hotelImageWrapper">
+              <div className="hotelImageWrapper" key={index}>
                 <img
-                  key={index}
                   onClick={() => handleClick(index)}
                   className="hotelImg"
                   src={photo.src}
@@ -117,7 +116,7 @@ const Hotel = () => {
           <div className="hotelDetails">
             <div className="hotelDetailsText">
               <h1 className="hotelTitle">Porto Matrouh-original</h1>
-              <p1 className="hotelDesc">
+              <p className="hotelDesc">
                 You're eligible for a Genius discount at Porto Matrouh-original!
                 To save at this property, all you have to do is sign in.
                 Boasting a garden, Porto Matrouh-original offers accommodation
@@ -127,7 +126,7 @@ const Hotel = () => {
                 Guest rooms in the resort are equipped with a flat-screen TV.
                 Wonderful view on Mediterranean Sea is 16 km from Porto
                 Matrouh-original.
-              </p1>
+              </p>
             </div>
             <div className="hotelDetailsPrice">
               <h1>Perfect for 9-day stay!</h1>
